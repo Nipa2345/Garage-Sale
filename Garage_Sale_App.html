@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garag_Sale_Fund_Raiser</title>
+    <script type="text/javascript" src="js/Script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Registration for Garage Sale</h1>
+    <form name="myform" method="POST" onsubmit="return formSubmit();" action="">
+
+        <label for="name">Name</label>
+        <input id="name" placeholder="FirstName LastName" type="text" name="name"><br/>
+        
+        <label for="email">Email</label>
+        <input id="email" placeholder="email@domain.com" type="email" name="email"><br/>
+        
+        <label for="cardNumber">Credit Card Number</label>
+        <input id="cardNumber" placeholder="1234-1234-1234-1234" type="cardNumber" name="cardNumber"><br/>
+
+        <label for="expiryMonth">Credit Card Expiry Month</label>
+        <input id="expiryMonth" placeholder="MMM" type="expiryMonth" name="expiryMonth"><br/>
+
+        <label for="expiryYear">Credit Card Expiry Year</label>
+        <input name="expiryYear" id="expiryYear" placeholder="YYYY" type="expiryYear" name="expiryYear">
+        <br/>
+        <br/>
+
+        <h1>Select Here!</h1>
+        <label for="table">Table: CA$20</label>
+        <input id="table" type="table" name="table"><br/>
+        
+        <label for="chair">Chair: CA$15</label>
+        <input id="chair" type="chair" name="chair"><br/>
+        
+        <label for="speaker">Speaker: CA$20</label>
+        <input id="speaker" type="speaker" name="speaker"><br/>
+        
+        <label for="lamp">Lamp : CA$10</label>
+        <input id="lamp" type="lamp" name="lamp"><br/>
+           
+        <label for="fan">Fan : CA$10</label>
+        <input id="fan" type="fan" name="fan"><br/>
+    
+        <br />
+        <br />
+
+        <input class="submit" type="submit" value="Submit">
+        <p id="errors"></p>
+    </form>
+
+    <div class="formData">
+        <p id="formResult"></p>
+    </div>   
+</body>
+</html>
